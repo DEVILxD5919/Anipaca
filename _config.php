@@ -1,27 +1,28 @@
+
 <?php 
 
-$conn = new mysqli("HOSTNAME", "USERNAME", "PASSWORD", "DATABASE");
+$conn = new mysqli("34.227.87.221", "devil", "ded121", "anime");
 
 if ($conn->connect_error) {
     error_log("Database connection failed: " . $conn->connect_error);
     die("Database connection failed.");
 }
 
-$websiteTitle = "AniPaca";
+$websiteTitle = "AniSpace";
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
 $websiteUrl = "{$protocol}://{$_SERVER['SERVER_NAME']}";
 $websiteLogo = $websiteUrl . "/public/logo/logo.png";
 $contactEmail = "@gmail.com";
 
-$version = "2.1";
+$version = "1.0";
 
-$discord = "https://dcd.gg/anipaca";
-$github = "https://github.com/PacaHat";
+$discord = "https://prismo.one";
+$github = "https://github.com/DEVILxD5919";
 $telegram = "https://t.me/anipaca";
-$instagram = "https://www.instagram.com/pxr15_"; 
+$instagram = "https://www.instagram.com/_not._.anas"; 
 
 // all the api you need
-$zpi = "https://your-hosted-api.com/api"; //https://github.com/PacaHat/zen-api
+$zpi = "https://myanimeapi-nine.vercel.app/api"; //https://github.com/PacaHat/zen-api
 $proxy = $websiteUrl . "/src/ajax/proxy.php?url=";
 
 //If you want faster loading speed
