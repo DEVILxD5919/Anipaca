@@ -1,7 +1,7 @@
 
 <?php 
 
-$conn = new mysqli("143.198.230.235", "devil", "ded121", "anime");
+$conn = new mysqli("localhost", "devil", "ded121", "anime");
 
 if ($conn->connect_error) {
     error_log("Database connection failed: " . $conn->connect_error);
